@@ -1,0 +1,12 @@
+platform :ios, '8.0'
+use_frameworks!
+
+target 'LNRunning' do
+pod 'ReactiveCocoa', '~> 4.2.2'
+pod 'LixFoundation', '~> 0.0.5'
+pod 'AMap3DMap'  #3D地图 SDK
+pod 'FMDB', '~> 2.6.2'
+pod 'Bugly'
+pod 'YYModel'
+end
+

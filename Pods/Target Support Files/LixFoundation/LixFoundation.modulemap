@@ -1,0 +1,6 @@
+framework module LixFoundation {
+  umbrella header "LixFoundation-umbrella.h"
+
+  export *
+  module * { export * }
+}

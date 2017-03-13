@@ -1,0 +1,35 @@
+PODS:
+  - AMap3DMap (4.6.1):
+    - AMapFoundation (~> 1.3)
+  - AMapFoundation (1.3.3)
+  - Bugly (2.4.6)
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - LixFoundation (0.0.5)
+  - ReactiveCocoa (4.2.2):
+    - Result (~> 2.0)
+  - Result (2.1.3)
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - AMap3DMap
+  - Bugly
+  - FMDB (~> 2.6.2)
+  - LixFoundation (~> 0.0.5)
+  - ReactiveCocoa (~> 4.2.2)
+  - YYModel
+
+SPEC CHECKSUMS:
+  AMap3DMap: eb6656fb441ed7eb310b3c121032e947d4d649e5
+  AMapFoundation: c086329a1f19afec00e4c197863665235eb43dc2
+  Bugly: 7756e72c59387b0d490f46e83ab458ae94ee7fba
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  LixFoundation: edb8dcb9c9f0a9c0027f135e13013297aeb3840e
+  ReactiveCocoa: 72263e7ac0770c274617ccd345e01049d0ca38ae
+  Result: 18e1a7597fbcca5923c565b40a25a98afafdee02
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: 63a380688e3e338074fa3377f3f44de274c8056d
+
+COCOAPODS: 1.1.1

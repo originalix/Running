@@ -1,0 +1,777 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		176C5570EE62F4DFA57A05CE /* Pods_LNRunning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F612F74188E89712A0623000 /* Pods_LNRunning.framework */; };
+		5659BE451E514E6F00821A80 /* LNPolyLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5659BE401E514E6F00821A80 /* LNPolyLine.m */; };
+		5659BE461E514E6F00821A80 /* LNSportTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5659BE421E514E6F00821A80 /* LNSportTracking.m */; };
+		5659BE471E514E6F00821A80 /* LNSportTrackingLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5659BE441E514E6F00821A80 /* LNSportTrackingLine.m */; };
+		5660072E1E4D823A00522D01 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5660072D1E4D823A00522D01 /* DemoViewController.m */; };
+		566007311E4D955F00522D01 /* LNSportsInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 566007301E4D955F00522D01 /* LNSportsInfoModel.m */; };
+		566007341E4D958900522D01 /* LNSportsDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 566007331E4D958900522D01 /* LNSportsDetailModel.m */; };
+		566007371E4D978D00522D01 /* LNDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 566007361E4D978D00522D01 /* LNDBManager.m */; };
+		5660073B1E4D9EE200522D01 /* LNGetPaceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5660073A1E4D9EE200522D01 /* LNGetPaceModel.m */; };
+		566718801E4C2CA800C51E73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5667187F1E4C2CA800C51E73 /* main.m */; };
+		566718831E4C2CA800C51E73 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 566718821E4C2CA800C51E73 /* AppDelegate.m */; };
+		566718861E4C2CA800C51E73 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 566718851E4C2CA800C51E73 /* ViewController.m */; };
+		566718891E4C2CA800C51E73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 566718871E4C2CA800C51E73 /* Main.storyboard */; };
+		5667188B1E4C2CA800C51E73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5667188A1E4C2CA800C51E73 /* Assets.xcassets */; };
+		5667188E1E4C2CA800C51E73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5667188C1E4C2CA800C51E73 /* LaunchScreen.storyboard */; };
+		566718991E4C2CA900C51E73 /* LNRunningTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 566718981E4C2CA900C51E73 /* LNRunningTests.m */; };
+		566718A41E4C2CA900C51E73 /* LNRunningUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 566718A31E4C2CA900C51E73 /* LNRunningUITests.m */; };
+		566718B71E4C2D7B00C51E73 /* LNRunBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 566718B61E4C2D7B00C51E73 /* LNRunBaseViewController.m */; };
+		566718BD1E4C382000C51E73 /* LNMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 566718BC1E4C382000C51E73 /* LNMapView.m */; };
+		56CFB8D11E4C4B69009E2FC4 /* LNRunningTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CFB8D01E4C4B69009E2FC4 /* LNRunningTimer.swift */; };
+		56CFB8D31E4C4C01009E2FC4 /* LixMarcoSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CFB8D21E4C4C01009E2FC4 /* LixMarcoSwift.swift */; };
+		56CFB8DE1E4C5582009E2FC4 /* LNStepCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CFB8DD1E4C5582009E2FC4 /* LNStepCounter.swift */; };
+		56CFB8E41E4C6036009E2FC4 /* LNRunManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CFB8E31E4C6036009E2FC4 /* LNRunManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		566718951E4C2CA900C51E73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 566718731E4C2CA800C51E73 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5667187A1E4C2CA800C51E73;
+			remoteInfo = LNRunning;
+		};
+		566718A01E4C2CA900C51E73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 566718731E4C2CA800C51E73 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5667187A1E4C2CA800C51E73;
+			remoteInfo = LNRunning;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5659BE3F1E514E6F00821A80 /* LNPolyLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNPolyLine.h; sourceTree = "<group>"; };
+		5659BE401E514E6F00821A80 /* LNPolyLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNPolyLine.m; sourceTree = "<group>"; };
+		5659BE411E514E6F00821A80 /* LNSportTracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNSportTracking.h; sourceTree = "<group>"; };
+		5659BE421E514E6F00821A80 /* LNSportTracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNSportTracking.m; sourceTree = "<group>"; };
+		5659BE431E514E6F00821A80 /* LNSportTrackingLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNSportTrackingLine.h; sourceTree = "<group>"; };
+		5659BE441E514E6F00821A80 /* LNSportTrackingLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNSportTrackingLine.m; sourceTree = "<group>"; };
+		5660072B1E4D5A9F00522D01 /* LNRunningConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNRunningConst.h; sourceTree = "<group>"; };
+		5660072C1E4D823A00522D01 /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		5660072D1E4D823A00522D01 /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
+		5660072F1E4D955F00522D01 /* LNSportsInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNSportsInfoModel.h; sourceTree = "<group>"; };
+		566007301E4D955F00522D01 /* LNSportsInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNSportsInfoModel.m; sourceTree = "<group>"; };
+		566007321E4D958900522D01 /* LNSportsDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNSportsDetailModel.h; sourceTree = "<group>"; };
+		566007331E4D958900522D01 /* LNSportsDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNSportsDetailModel.m; sourceTree = "<group>"; };
+		566007351E4D978D00522D01 /* LNDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNDBManager.h; sourceTree = "<group>"; };
+		566007361E4D978D00522D01 /* LNDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNDBManager.m; sourceTree = "<group>"; };
+		566007391E4D9EE200522D01 /* LNGetPaceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNGetPaceModel.h; sourceTree = "<group>"; };
+		5660073A1E4D9EE200522D01 /* LNGetPaceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNGetPaceModel.m; sourceTree = "<group>"; };
+		5667187B1E4C2CA800C51E73 /* LNRunning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LNRunning.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5667187F1E4C2CA800C51E73 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		566718811E4C2CA800C51E73 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		566718821E4C2CA800C51E73 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		566718841E4C2CA800C51E73 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		566718851E4C2CA800C51E73 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		566718881E4C2CA800C51E73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5667188A1E4C2CA800C51E73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5667188D1E4C2CA800C51E73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5667188F1E4C2CA800C51E73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		566718941E4C2CA900C51E73 /* LNRunningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LNRunningTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		566718981E4C2CA900C51E73 /* LNRunningTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNRunningTests.m; sourceTree = "<group>"; };
+		5667189A1E4C2CA900C51E73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5667189F1E4C2CA900C51E73 /* LNRunningUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LNRunningUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		566718A31E4C2CA900C51E73 /* LNRunningUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNRunningUITests.m; sourceTree = "<group>"; };
+		566718A51E4C2CA900C51E73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		566718B51E4C2D7B00C51E73 /* LNRunBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNRunBaseViewController.h; sourceTree = "<group>"; };
+		566718B61E4C2D7B00C51E73 /* LNRunBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNRunBaseViewController.m; sourceTree = "<group>"; };
+		566718BB1E4C382000C51E73 /* LNMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNMapView.h; sourceTree = "<group>"; };
+		566718BC1E4C382000C51E73 /* LNMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNMapView.m; sourceTree = "<group>"; };
+		566718BE1E4C387100C51E73 /* LNRunning.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNRunning.h; sourceTree = "<group>"; };
+		566718C01E4C3AF100C51E73 /* LNRunViewControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNRunViewControllerProtocol.h; sourceTree = "<group>"; };
+		56CFB8CD1E4C4B42009E2FC4 /* LNRunning-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LNRunning-Bridging-Header.h"; sourceTree = "<group>"; };
+		56CFB8D01E4C4B69009E2FC4 /* LNRunningTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LNRunningTimer.swift; sourceTree = "<group>"; };
+		56CFB8D21E4C4C01009E2FC4 /* LixMarcoSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LixMarcoSwift.swift; sourceTree = "<group>"; };
+		56CFB8DD1E4C5582009E2FC4 /* LNStepCounter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LNStepCounter.swift; sourceTree = "<group>"; };
+		56CFB8E21E4C6036009E2FC4 /* LNRunManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNRunManager.h; sourceTree = "<group>"; };
+		56CFB8E31E4C6036009E2FC4 /* LNRunManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNRunManager.m; sourceTree = "<group>"; };
+		9B6C42E619BFAA5CB291695C /* Pods-LNRunning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LNRunning.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LNRunning/Pods-LNRunning.debug.xcconfig"; sourceTree = "<group>"; };
+		F612F74188E89712A0623000 /* Pods_LNRunning.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LNRunning.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9FFFDAAAC5A133BDC79B361 /* Pods-LNRunning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LNRunning.release.xcconfig"; path = "Pods/Target Support Files/Pods-LNRunning/Pods-LNRunning.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		566718781E4C2CA800C51E73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				176C5570EE62F4DFA57A05CE /* Pods_LNRunning.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		566718911E4C2CA900C51E73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5667189C1E4C2CA900C51E73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		566718721E4C2CA800C51E73 = {
+			isa = PBXGroup;
+			children = (
+				566718B11E4C2D3F00C51E73 /* Classes */,
+				5667187D1E4C2CA800C51E73 /* LNRunning */,
+				566718971E4C2CA900C51E73 /* LNRunningTests */,
+				566718A21E4C2CA900C51E73 /* LNRunningUITests */,
+				5667187C1E4C2CA800C51E73 /* Products */,
+				BD22D4355812A4A93EE99965 /* Pods */,
+				9B719C817B4C29EB2C70E6BA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5667187C1E4C2CA800C51E73 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5667187B1E4C2CA800C51E73 /* LNRunning.app */,
+				566718941E4C2CA900C51E73 /* LNRunningTests.xctest */,
+				5667189F1E4C2CA900C51E73 /* LNRunningUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5667187D1E4C2CA800C51E73 /* LNRunning */ = {
+			isa = PBXGroup;
+			children = (
+				566718811E4C2CA800C51E73 /* AppDelegate.h */,
+				566718821E4C2CA800C51E73 /* AppDelegate.m */,
+				566718841E4C2CA800C51E73 /* ViewController.h */,
+				566718851E4C2CA800C51E73 /* ViewController.m */,
+				5660072C1E4D823A00522D01 /* DemoViewController.h */,
+				5660072D1E4D823A00522D01 /* DemoViewController.m */,
+				566718871E4C2CA800C51E73 /* Main.storyboard */,
+				5667188A1E4C2CA800C51E73 /* Assets.xcassets */,
+				5667188C1E4C2CA800C51E73 /* LaunchScreen.storyboard */,
+				5667188F1E4C2CA800C51E73 /* Info.plist */,
+				5667187E1E4C2CA800C51E73 /* Supporting Files */,
+			);
+			path = LNRunning;
+			sourceTree = "<group>";
+		};
+		5667187E1E4C2CA800C51E73 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5667187F1E4C2CA800C51E73 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		566718971E4C2CA900C51E73 /* LNRunningTests */ = {
+			isa = PBXGroup;
+			children = (
+				566718981E4C2CA900C51E73 /* LNRunningTests.m */,
+				5667189A1E4C2CA900C51E73 /* Info.plist */,
+			);
+			path = LNRunningTests;
+			sourceTree = "<group>";
+		};
+		566718A21E4C2CA900C51E73 /* LNRunningUITests */ = {
+			isa = PBXGroup;
+			children = (
+				566718A31E4C2CA900C51E73 /* LNRunningUITests.m */,
+				566718A51E4C2CA900C51E73 /* Info.plist */,
+			);
+			path = LNRunningUITests;
+			sourceTree = "<group>";
+		};
+		566718B11E4C2D3F00C51E73 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				566718BF1E4C3A9100C51E73 /* Protocol */,
+				566718B21E4C2D3F00C51E73 /* Controller */,
+				566718B31E4C2D3F00C51E73 /* Model */,
+				566718B41E4C2D3F00C51E73 /* View */,
+				566718BE1E4C387100C51E73 /* LNRunning.h */,
+				5660072B1E4D5A9F00522D01 /* LNRunningConst.h */,
+				56CFB8CD1E4C4B42009E2FC4 /* LNRunning-Bridging-Header.h */,
+				56CFB8D21E4C4C01009E2FC4 /* LixMarcoSwift.swift */,
+			);
+			name = Classes;
+			path = LNRunning/Classes;
+			sourceTree = "<group>";
+		};
+		566718B21E4C2D3F00C51E73 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				566718B51E4C2D7B00C51E73 /* LNRunBaseViewController.h */,
+				566718B61E4C2D7B00C51E73 /* LNRunBaseViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		566718B31E4C2D3F00C51E73 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				56CFB8D01E4C4B69009E2FC4 /* LNRunningTimer.swift */,
+				56CFB8DD1E4C5582009E2FC4 /* LNStepCounter.swift */,
+				5659BE3F1E514E6F00821A80 /* LNPolyLine.h */,
+				5659BE401E514E6F00821A80 /* LNPolyLine.m */,
+				5659BE411E514E6F00821A80 /* LNSportTracking.h */,
+				5659BE421E514E6F00821A80 /* LNSportTracking.m */,
+				5659BE431E514E6F00821A80 /* LNSportTrackingLine.h */,
+				5659BE441E514E6F00821A80 /* LNSportTrackingLine.m */,
+				56CFB8E21E4C6036009E2FC4 /* LNRunManager.h */,
+				56CFB8E31E4C6036009E2FC4 /* LNRunManager.m */,
+				5660072F1E4D955F00522D01 /* LNSportsInfoModel.h */,
+				566007301E4D955F00522D01 /* LNSportsInfoModel.m */,
+				566007321E4D958900522D01 /* LNSportsDetailModel.h */,
+				566007331E4D958900522D01 /* LNSportsDetailModel.m */,
+				566007351E4D978D00522D01 /* LNDBManager.h */,
+				566007361E4D978D00522D01 /* LNDBManager.m */,
+				566007391E4D9EE200522D01 /* LNGetPaceModel.h */,
+				5660073A1E4D9EE200522D01 /* LNGetPaceModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		566718B41E4C2D3F00C51E73 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				566718BB1E4C382000C51E73 /* LNMapView.h */,
+				566718BC1E4C382000C51E73 /* LNMapView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		566718BF1E4C3A9100C51E73 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				566718C01E4C3AF100C51E73 /* LNRunViewControllerProtocol.h */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		9B719C817B4C29EB2C70E6BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F612F74188E89712A0623000 /* Pods_LNRunning.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD22D4355812A4A93EE99965 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B6C42E619BFAA5CB291695C /* Pods-LNRunning.debug.xcconfig */,
+				F9FFFDAAAC5A133BDC79B361 /* Pods-LNRunning.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5667187A1E4C2CA800C51E73 /* LNRunning */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 566718A81E4C2CA900C51E73 /* Build configuration list for PBXNativeTarget "LNRunning" */;
+			buildPhases = (
+				5B2809008AE59833F92441CF /* [CP] Check Pods Manifest.lock */,
+				566718771E4C2CA800C51E73 /* Sources */,
+				566718781E4C2CA800C51E73 /* Frameworks */,
+				566718791E4C2CA800C51E73 /* Resources */,
+				B100355AD3FFBA08D57F2F32 /* [CP] Embed Pods Frameworks */,
+				AF31DD606C6E1655CBC869D0 /* [CP] Copy Pods Resources */,
+				566007381E4D9CE900522D01 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LNRunning;
+			productName = LNRunning;
+			productReference = 5667187B1E4C2CA800C51E73 /* LNRunning.app */;
+			productType = "com.apple.product-type.application";
+		};
+		566718931E4C2CA900C51E73 /* LNRunningTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 566718AB1E4C2CA900C51E73 /* Build configuration list for PBXNativeTarget "LNRunningTests" */;
+			buildPhases = (
+				566718901E4C2CA900C51E73 /* Sources */,
+				566718911E4C2CA900C51E73 /* Frameworks */,
+				566718921E4C2CA900C51E73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				566718961E4C2CA900C51E73 /* PBXTargetDependency */,
+			);
+			name = LNRunningTests;
+			productName = LNRunningTests;
+			productReference = 566718941E4C2CA900C51E73 /* LNRunningTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5667189E1E4C2CA900C51E73 /* LNRunningUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 566718AE1E4C2CA900C51E73 /* Build configuration list for PBXNativeTarget "LNRunningUITests" */;
+			buildPhases = (
+				5667189B1E4C2CA900C51E73 /* Sources */,
+				5667189C1E4C2CA900C51E73 /* Frameworks */,
+				5667189D1E4C2CA900C51E73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				566718A11E4C2CA900C51E73 /* PBXTargetDependency */,
+			);
+			name = LNRunningUITests;
+			productName = LNRunningUITests;
+			productReference = 5667189F1E4C2CA900C51E73 /* LNRunningUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		566718731E4C2CA800C51E73 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Lix;
+				TargetAttributes = {
+					5667187A1E4C2CA800C51E73 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = R92MB35B2J;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					566718931E4C2CA900C51E73 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5667187A1E4C2CA800C51E73;
+					};
+					5667189E1E4C2CA900C51E73 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5667187A1E4C2CA800C51E73;
+					};
+				};
+			};
+			buildConfigurationList = 566718761E4C2CA800C51E73 /* Build configuration list for PBXProject "LNRunning" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 566718721E4C2CA800C51E73;
+			productRefGroup = 5667187C1E4C2CA800C51E73 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5667187A1E4C2CA800C51E73 /* LNRunning */,
+				566718931E4C2CA900C51E73 /* LNRunningTests */,
+				5667189E1E4C2CA900C51E73 /* LNRunningUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		566718791E4C2CA800C51E73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5667188E1E4C2CA800C51E73 /* LaunchScreen.storyboard in Resources */,
+				5667188B1E4C2CA800C51E73 /* Assets.xcassets in Resources */,
+				566718891E4C2CA800C51E73 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		566718921E4C2CA900C51E73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5667189D1E4C2CA900C51E73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		566007381E4D9CE900522D01 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n#\n# Copyright 2016 Bugly, Tencent. All rights reserved.\n#\n# V1.4.0\n#\n# 2016.08.03\n#\n#\n#\n######################################################\n# 1. 脚本集成到Xcode工程的Target\n######################################################\n#\n# --- Copy the SCRIPT to the Run Script of Build Phases in the Xcode project ---\n#\n# #\nBUGLY_APP_ID=\"99753fac8d\"\n# #\nBUGLY_APP_KEY=\"9be00b74-5d7a-4e93-b74d-8cf9876f8b8f\"\n# #\nBUNDLE_IDENTIFIER=\"Lix.LNRunning\"\n# #\nUPLOAD_DSYM_ONLY=1\n#\n# # 脚本默认配置的版本格式为CFBundleShortVersionString(CFBundleVersion),  如果你修改默认的版本格式, 请设置此变量, 如果不想修改, 请忽略此设置\n# CUSTOMIZED_APP_VERSION=\"\"\n#\n# # Debug模式编译是否上传，1＝上传 0＝不上传，默认不上传\nUPLOAD_DEBUG_SYMBOLS=1\n#\n# # 模拟器编译是否上传，1=上传 0=不上传，默认不上传\nUPLOAD_SIMULATOR_SYMBOLS=1\n#\n# #只有Archive操作时上传, 1=支持Archive上传 0=所有Release模式编译都上传\n# UPLOAD_ARCHIVE_ONLY=0\n#\n# #\n# source dSYMUpload.sh\n#\n# --- END OF SCRIPT ---\n#\n#\n#\n#\n#######################################################\n# 2. 脚本根据输入参数处理\n#######################################################\n#\n# #命令行下输入应用基本信息, .dSYM文件的父目录路径, 输出文件目录即可\n#\n# sh dSYMUpload.sh <bugly_app_id> <bugly_app_key> <app_bundle_identifier> <app_version> <dSYM_src_dir> <bSYMBOL_dest_dir>\n#\n# #\n#\n# #注意:\n# # 1. dSYMUpload.sh会调用buglySymboliOS.jar进行.dSYM解析，所以依赖Java运行时环境\n# # 2. dSYMUpload.sh和buglySymboliOS.jar的文件路径需一致\n#\n#\n\n#\n# --- CONTENT OF SCRIPT ---\n#\n\n# Bugly服务域名\nBUGLY_DSYM_UPLOAD_DOMAIN=\"api.bugly.qq.com\"\n\n# 注意jar工具的路径跟dSYMUpload.sh脚本路径一致, 请务必保证jar路径的正确性\nBUGLY_SYMBOL_JAR_PATH=\"dsymtool/buglySymboliOS.jar\"\n# 查找添加到系统目录的jar工具\nif [ ! -f \"${BUGLY_SYMBOL_JAR_PATH}\" ]; then\nBUGLY_SYMBOL_JAR_PATH=\"$HOME/bin/buglySymboliOS.jar\"\nfi\n\n# 打印错误信息\nfunction exitWithMessage(){\n    echo \"--------------------------------\"\n    echo \"${1}\"\n    echo \"--------------------------------\"\n    exit ${2}\n}\n\n# 上传bSYMBOL文件\nfunction dSYMUpload() {\n    P_APP_ID=\"$1\"\n    P_APP_KEY=\"$2\"\n    P_APP_BUNDLE_ID=\"$3\"\n    P_APP_VERSION=\"$4\"\n    P_BSYMBOL_ZIP_FILE=\"$5\"\n    \n    #\n    P_BSYMBOL_ZIP_FILE_NAME=${P_BSYMBOL_ZIP_FILE##*/}\n        P_BSYMBOL_ZIP_FILE_NAME=${P_BSYMBOL_ZIP_FILE_NAME//&/_}\n            P_BSYMBOL_ZIP_FILE_NAME=\"${P_BSYMBOL_ZIP_FILE_NAME// /_}\"\n            \n            DSYM_UPLOAD_URL=\"https://${BUGLY_DSYM_UPLOAD_DOMAIN}/openapi/file/upload/symbol?app_id=${P_APP_ID}&app_key=${P_APP_KEY}\"\n            echo \"dSYM upload url: ${DSYM_UPLOAD_URL}\"\n            \n            echo \"-----------------------------\"\n            STATUS=$(/usr/bin/curl -k \"${DSYM_UPLOAD_URL}\" --form \"api_version=1\" --form \"app_id=${P_APP_ID}\" --form \"app_key=${P_APP_KEY}\" --form \"symbolType=2\"  --form \"bundleId=${BUNDLE_IDENTIFIER}\" --form \"productVersion=${BUGLY_APP_VERSION}\" --form \"fileName=${P_BSYMBOL_ZIP_FILE_NAME}\" --form \"file=@${P_BSYMBOL_ZIP_FILE}\" --verbose)\n            echo \"-----------------------------\"\n            \n            UPLOAD_RESULT=\"FAILTURE\"\n            echo \"Bugly server response: ${STATUS}\"\n            if [ ! \"${STATUS}\" ]; then\n            echo \"Error: Failed to upload the zip archive file.\"\n            elif [[ \"${STATUS}\" == *\"{\\\"reponseCode\\\":\\\"0\\\"}\"* ]]; then\n            echo \"Success to upload the dSYM for the app [${BUNDLE_IDENTIFIER} ${BUGLY_APP_VERSION}]\"\n            UPLOAD_RESULT=\"SUCCESS\"\n            else\n            echo \"Error: Failed to upload the zip archive file to Bugly.\"\n            fi\n            \n            #Remove temp dSYM archive\n            #echo \"Remove temporary zip archive: ${DSYM_ZIP_FPATH}\"\n            #/bin/rm -f \"${DSYM_ZIP_FPATH}\"\n            \n            if [ \"$?\" -ne 0 ]; then\n            exitWithMessage \"Error: Failed to remove temporary zip archive.\" 0\n            fi\n            \n            echo \"--------------------------------\"\n            echo \"${UPLOAD_RESULT} - dSYM upload complete.\"\n            \n            if [[ \"${UPLOAD_RESULT}\" == \"FAILTURE\" ]]; then\n            echo \"--------------------------------\"\n            echo \"Failed to upload the dSYM\"\n            echo \"Please check the script and try it again.\"\n            fi\n        }\n        \n        # .dSYM解析为bSYMBOL文件\n        function dSYMParse() {\n            DSYM_FILE=\"$1\"\n            DSYM_SYMBOL_FILE=\"$2\"\n            \n            echo \"--------------------------------\"\n            echo \"Extract symbol info from .dSYM file. to ${DSYM_SYMBOL_FILE}\"\n            (/usr/bin/java -Xms512m -Xmx1024m -Dfile.encoding=UTF8 -jar \"${BUGLY_SYMBOL_JAR_PATH}\" -i \"${DSYM_FILE}\" -o \"${DSYM_SYMBOL_FILE}\" ) || exitWithMessage \"Error: Failed to extract symbols.\" 1\n            echo \"--------------------------------\"\n            \n        }\n        \n        # 执行\n        function run() {\n            \n            CONFIG_BUGLY_APP_ID=\"$1\"\n            CONFIG_BUGLY_APP_KEY=\"$2\"\n            \n            CONFIG_BUGLY_APP_BUNDLE_IDENTIFIER=\"$3\"\n            CONFIG_BUGLY_APP_VERSION=\"$4\"\n            CONFIG_DSYM_SOURCE_DIR=\"$5\"\n            CONFIG_DSYM_DEST_DIR=\"$6\"\n            CONFIG_UPLOAD_DSYM_ONLY=\"$7\"\n            \n            # 检查必须参数是否设置\n            if [ ! \"${CONFIG_BUGLY_APP_ID}\" ]; then\n            exitWithMessage \"Error: Bugly App ID not defined. Please set 'BUGLY_APP_ID' \" 0\n            fi\n            \n            if [[ \"${CONFIG_BUGLY_APP_ID}\" == *\"App ID\"* ]]; then\n            exitWithMessage \"Error: Bugly App ID not defined.\" 0\n            fi\n            \n            if [ ! \"${CONFIG_BUGLY_APP_KEY}\" ]; then\n            exitWithMessage \"Error: Bugly App Key not defined.\" 0\n            fi\n            \n            if [ ! \"${CONFIG_BUGLY_APP_BUNDLE_IDENTIFIER}\" ]; then\n            exitWithMessage \"Error: Bundle Identifier not defined.\" 0\n            fi\n            \n            if [ ! \"${CONFIG_BUGLY_APP_VERSION}\" ]; then\n            exitWithMessage \"Error: App Version not defined.\" 0\n            fi\n            \n            if [ ! -e \"${CONFIG_DSYM_SOURCE_DIR}\" ]; then\n            exitWithMessage \"Error: Invalid dir ${CONFIG_DSYM_SOURCE_DIR}\" 0\n            fi\n            \n            if [ ! \"${CONFIG_DSYM_DEST_DIR}\" ]; then\n            exitWithMessage \"Error: Invalid dir ${CONFIG_DSYM_DEST_DIR}\" 0\n            fi\n            \n            if [ ! -e \"${CONFIG_DSYM_DEST_DIR}\" ]; then\n            mkdir ${CONFIG_DSYM_DEST_DIR}\n            fi\n            \n            DSYM_FOLDER=\"${CONFIG_DSYM_SOURCE_DIR}\"\n            IFS=$'\\n'\n            \n            echo \"Scaning dSYM FOLDER: ${DSYM_FOLDER} ...\"\n            RET=\"F\"\n            \n            #\n            for dsymFile in $(find \"$DSYM_FOLDER\" -name '*.dSYM'); do\n            RET=\"T\"\n            echo \"Found dSYM file: $dsymFile\"\n            \n            DSYM_FILE_NAME=${dsymFile##*/}\n                DSYM_SYMBOL_ZIP_FILE_NAME=\"${DSYM_FILE_NAME}.zip\"\n                DSYM_SYMBOL_ZIP_FILE_NAME=\"${DSYM_SYMBOL_ZIP_FILE_NAME// /_}\"\n                DSYM_SYMBOL_ZIP_FILE=${CONFIG_DSYM_DEST_DIR}/${DSYM_SYMBOL_ZIP_FILE_NAME}\n                \n                if [ $CONFIG_UPLOAD_DSYM_ONLY -eq 1 ]; then\n                if [ -e $DSYM_SYMBOL_ZIP_FILE ]; then\n                rm -f $DSYM_SYMBOL_ZIP_FILE\n                fi\n                # 如果只上传dSYM，直接压缩dSYM目录\n                zip -r -j $DSYM_SYMBOL_ZIP_FILE $dsymFile -x *.plist\n                else\n                # 使用符号表工具来生成Symbol文件\n                dSYMParse $dsymFile $DSYM_SYMBOL_ZIP_FILE\n                fi\n                \n                # 上传\n                dSYMUpload $CONFIG_BUGLY_APP_ID $CONFIG_BUGLY_APP_KEY $CONFIG_BUGLY_APP_BUNDLE_IDENTIFIER $CONFIG_BUGLY_APP_VERSION $DSYM_SYMBOL_ZIP_FILE\n                done\n                \n                if [ $RET = \"F\" ]; then\n                exitWithMessage \"No .dSYM found in ${DSYM_FOLDER}\" 0\n                fi\n            }\n            \n            # 在Xcode工程中执行\n            function runInXcode(){\n                echo \"Uploading dSYM to Bugly in Xcode ...\"\n                \n                echo \"Info.Plist : ${INFOPLIST_FILE}\"\n                \n                BUNDLE_VERSION=$(/usr/libexec/PlistBuddy -c 'Print CFBundleVersion' \"${INFOPLIST_FILE}\")\n                BUNDLE_SHORT_VERSION=$(/usr/libexec/PlistBuddy -c 'Print CFBundleShortVersionString' \"${INFOPLIST_FILE}\")\n                \n                # 组装Bugly默认识别的版本信息(格式为CFBundleShortVersionString(CFBundleVersion), 例如: 1.0(1))\n                if [ ! \"${CUSTOMIZED_APP_VERSION}\" ]; then\n                BUGLY_APP_VERSION=\"${BUNDLE_SHORT_VERSION}(${BUNDLE_VERSION})\"\n                else\n                BUGLY_APP_VERSION=\"${CUSTOMIZED_APP_VERSION}\"\n                fi\n                \n                echo \"--------------------------------\"\n                echo \"Prepare application information.\"\n                echo \"--------------------------------\"\n                \n                echo \"Product Name: ${PRODUCT_NAME}\"\n                echo \"Bundle Identifier: ${BUNDLE_IDENTIFIER}\"\n                echo \"Version: ${BUNDLE_SHORT_VERSION}\"\n                echo \"Build: ${BUNDLE_VERSION}\"\n                \n                echo \"Bugly App ID: ${BUGLY_APP_ID}\"\n                echo \"Bugly App key: ${BUGLY_APP_KEY}\"\n                echo \"Bugly App Version: ${BUGLY_APP_VERSION}\"\n                \n                echo \"--------------------------------\"\n                echo \"Check the arguments ...\"\n                \n                ##检查模拟器编译是否允许上传符号\n                if [ \"$EFFECTIVE_PLATFORM_NAME\" == \"-iphonesimulator\" ]; then\n                if [ $UPLOAD_SIMULATOR_SYMBOLS -eq 0 ]; then\n                exitWithMessage \"Warning: Build for simulator and skipping to upload. \\nYou can modify 'UPLOAD_SIMULATOR_SYMBOLS' to 1 in the script.\" 0\n                fi\n                fi\n                \n                ##检查是否是Release模式编译\n                if [ \"${CONFIGURATION=}\" == \"Debug\" ]; then\n                if [ $UPLOAD_DEBUG_SYMBOLS -eq 0 ]; then\n                exitWithMessage \"Warning: Build for debug mode and skipping to upload. \\nYou can modify 'UPLOAD_DEBUG_SYMBOLS' to 1 in the script.\" 0\n                fi\n                fi\n                \n                ##检查是否Archive操作\n                if [ $UPLOAD_ARCHIVE_ONLY -eq 1 ]; then\n                if [[ \"$TARGET_BUILD_DIR\" == *\"/Archive\"* ]]; then\n                echo \"Archive the package\"\n                else\n                exitWithMessage \"Warning: Build for NOT Archive mode and skipping to upload. \\nYou can modify 'UPLOAD_ARCHIVE_ONLY' to 0 in the script.\" 0\n                fi\n                fi\n                \n                #\n                run ${BUGLY_APP_ID} ${BUGLY_APP_KEY} ${BUNDLE_IDENTIFIER} ${BUGLY_APP_VERSION} ${DWARF_DSYM_FOLDER_PATH} ${BUILD_DIR}/BuglySymbolTemp ${UPLOAD_DSYM_ONLY}\n            }\n            \n            # 根据Xcode的环境变量判断是否处于Xcode环境\n            INFO_PLIST_FILE=\"${INFOPLIST_FILE}\"\n            \n            BuildInXcode=\"F\"\n            if [ -f \"${INFO_PLIST_FILE}\" ]; then\n            BuildInXcode=\"T\"\n            fi\n            \n            if [ $BuildInXcode = \"T\" ]; then\n            runInXcode\n            else\n            echo \"\\nUsage: dSYMUpload.sh <bugly_app_id> <bugly_app_key> <app_bundle_identifier> <app_version> <dSYM_src_dir> <bSYMBOL_dest_dir> [upload_dsym_only]\\n\"\n            # 你可以在此处直接设置BuglyAppID和BuglyAppKey，排除不常变参数的输入\n            BUGLY_APP_ID=\"$1\"\n            BUGLY_APP_KEY=\"$2\"\n            BUNDLE_IDENTIFIER=\"$3\"\n            BUGLY_APP_VERSION=\"$4\"\n            DWARF_DSYM_FOLDER_PATH=\"$5\"\n            SYMBOL_OUTPUT_PATH=\"$6\"\n            UPLOAD_DSYM_ONLY=$7\n            run ${BUGLY_APP_ID} ${BUGLY_APP_KEY} ${BUNDLE_IDENTIFIER} ${BUGLY_APP_VERSION} ${DWARF_DSYM_FOLDER_PATH} ${SYMBOL_OUTPUT_PATH} ${UPLOAD_DSYM_ONLY}\n            fi";
+		};
+		5B2809008AE59833F92441CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AF31DD606C6E1655CBC869D0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LNRunning/Pods-LNRunning-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B100355AD3FFBA08D57F2F32 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LNRunning/Pods-LNRunning-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		566718771E4C2CA800C51E73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56CFB8D31E4C4C01009E2FC4 /* LixMarcoSwift.swift in Sources */,
+				5659BE461E514E6F00821A80 /* LNSportTracking.m in Sources */,
+				566718861E4C2CA800C51E73 /* ViewController.m in Sources */,
+				56CFB8D11E4C4B69009E2FC4 /* LNRunningTimer.swift in Sources */,
+				5659BE471E514E6F00821A80 /* LNSportTrackingLine.m in Sources */,
+				5659BE451E514E6F00821A80 /* LNPolyLine.m in Sources */,
+				5660072E1E4D823A00522D01 /* DemoViewController.m in Sources */,
+				566007311E4D955F00522D01 /* LNSportsInfoModel.m in Sources */,
+				5660073B1E4D9EE200522D01 /* LNGetPaceModel.m in Sources */,
+				566718B71E4C2D7B00C51E73 /* LNRunBaseViewController.m in Sources */,
+				56CFB8DE1E4C5582009E2FC4 /* LNStepCounter.swift in Sources */,
+				566718831E4C2CA800C51E73 /* AppDelegate.m in Sources */,
+				566718801E4C2CA800C51E73 /* main.m in Sources */,
+				566007341E4D958900522D01 /* LNSportsDetailModel.m in Sources */,
+				566718BD1E4C382000C51E73 /* LNMapView.m in Sources */,
+				566007371E4D978D00522D01 /* LNDBManager.m in Sources */,
+				56CFB8E41E4C6036009E2FC4 /* LNRunManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		566718901E4C2CA900C51E73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				566718991E4C2CA900C51E73 /* LNRunningTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5667189B1E4C2CA900C51E73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				566718A41E4C2CA900C51E73 /* LNRunningUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		566718961E4C2CA900C51E73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5667187A1E4C2CA800C51E73 /* LNRunning */;
+			targetProxy = 566718951E4C2CA900C51E73 /* PBXContainerItemProxy */;
+		};
+		566718A11E4C2CA900C51E73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5667187A1E4C2CA800C51E73 /* LNRunning */;
+			targetProxy = 566718A01E4C2CA900C51E73 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		566718871E4C2CA800C51E73 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				566718881E4C2CA800C51E73 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5667188C1E4C2CA800C51E73 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5667188D1E4C2CA800C51E73 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		566718A61E4C2CA900C51E73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 2.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		566718A71E4C2CA900C51E73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 2.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		566718A91E4C2CA900C51E73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B6C42E619BFAA5CB291695C /* Pods-LNRunning.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = R92MB35B2J;
+				INFOPLIST_FILE = LNRunning/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Lix.LNRunning;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LNRunning/Classes/LNRunning-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
+			};
+			name = Debug;
+		};
+		566718AA1E4C2CA900C51E73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9FFFDAAAC5A133BDC79B361 /* Pods-LNRunning.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = R92MB35B2J;
+				INFOPLIST_FILE = LNRunning/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Lix.LNRunning;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LNRunning/Classes/LNRunning-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
+			};
+			name = Release;
+		};
+		566718AC1E4C2CA900C51E73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LNRunningTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Lix.LNRunningTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LNRunning.app/LNRunning";
+			};
+			name = Debug;
+		};
+		566718AD1E4C2CA900C51E73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LNRunningTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Lix.LNRunningTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LNRunning.app/LNRunning";
+			};
+			name = Release;
+		};
+		566718AF1E4C2CA900C51E73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = LNRunningUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Lix.LNRunningUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LNRunning;
+			};
+			name = Debug;
+		};
+		566718B01E4C2CA900C51E73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = LNRunningUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Lix.LNRunningUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LNRunning;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		566718761E4C2CA800C51E73 /* Build configuration list for PBXProject "LNRunning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				566718A61E4C2CA900C51E73 /* Debug */,
+				566718A71E4C2CA900C51E73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		566718A81E4C2CA900C51E73 /* Build configuration list for PBXNativeTarget "LNRunning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				566718A91E4C2CA900C51E73 /* Debug */,
+				566718AA1E4C2CA900C51E73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		566718AB1E4C2CA900C51E73 /* Build configuration list for PBXNativeTarget "LNRunningTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				566718AC1E4C2CA900C51E73 /* Debug */,
+				566718AD1E4C2CA900C51E73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		566718AE1E4C2CA900C51E73 /* Build configuration list for PBXNativeTarget "LNRunningUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				566718AF1E4C2CA900C51E73 /* Debug */,
+				566718B01E4C2CA900C51E73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 566718731E4C2CA800C51E73 /* Project object */;
+}
