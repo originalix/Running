@@ -11,7 +11,7 @@
 
 #import <MAMapKit/MAMapKit.h>
 #import "LixFoundation.h"
-#import "ReactiveCocoa.h"
+#import "ReactiveObjC.h"
 #import "LNRunningConst.h"
 #import <Bugly/Bugly.h>
 #import "YYModel.h"
