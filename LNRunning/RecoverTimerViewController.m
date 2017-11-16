@@ -9,6 +9,8 @@
 #import "RecoverTimerViewController.h"
 #import "LNRunning-Swift.h"
 #import "NSString+LixExtension.h"
+#import "LNRunModel.h"
+#import "WHC_ModelSqlite.h"
 
 @interface RecoverTimerViewController ()
 
@@ -27,6 +29,14 @@
     self.timer = [[LNRecoverTimer alloc] initWithTimeLabel:self.timeLabel beforeTimeNumber:60];
     self.timeLabel.text = [NSString timeFormatted:60];
 //    [LNRecoverTimer test];
+    LNRunModel *model = [[LNRunModel alloc] init];
+    model.startTime = [LNRunModel dateToString];
+    model.endTime = [LNRunModel dateToString];
+    model.duration = 0;
+    for (int i = 0; i < 10; i++) {
+        [WHC_ModelSqlite insert:model];
+    }
+    NSLog(@"db path = %@", [WHC_ModelSqlite localPathWithModel:[LNRunModel class]]);
 }
 
 - (void)didReceiveMemoryWarning {

@@ -279,13 +279,19 @@
     return _sportTracking;
 }
 
-- (LNRunManager *)runManager {
+//- (LNRunManager *)runManager {
+//    if (!_runManager) {
+//        _runManager = [LNRunManager shareInstance];
+//    }
+//    return _runManager;
+//}
+
+- (RunManager *)runManager {
     if (!_runManager) {
-        _runManager = [LNRunManager shareInstance];
+        _runManager = [RunManager shareInstance];
     }
     return _runManager;
 }
-
 
 - (LNRunningTimer *)timer {
     if (!_timer) {

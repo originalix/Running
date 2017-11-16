@@ -19,4 +19,10 @@
     return @"_id";
 }
 
++ (NSString *)dateToString {
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    formatter.dateFormat = @"yyyy-MM-dd HH:mm:ss";
+    return [formatter stringFromDate:[NSDate date]];
+}
+
 @end

@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "LNRunViewControllerProtocol.h"
-#import "LNRunManager.h"
+//#import "LNRunManager.h"
+#import "RunManager.h"
 #import "LNMapView.h"
 #import "LNRunning-Swift.h"
 #import "LNRunning.h"
@@ -27,7 +28,8 @@
  */
 @property (nonatomic, strong) LNRunningTimer *timer;
 @property (nonatomic, strong) LNStepCounter *stepCounter;
-@property (nonatomic, strong) LNRunManager *runManager;
+//@property (nonatomic, strong) LNRunManager *runManager;
+@property (nonatomic, strong) RunManager *runManager;
 
 /**
  时间Label

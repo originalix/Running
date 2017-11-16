@@ -128,7 +128,7 @@ static RunManager *_lnRunManager = nil;
 //    self.infoModel.targetType = 0;
 //    self.infoModel.target = 0;
 //    [[LNDBManager shareInstance] insertInfoModel:self.infoModel];
-    [[DBManager shareInstance] insertInfoModel:self.infoModel];
+//    [[DBManager shareInstance] insertInfoModel:self.infoModel];
 }
 
 #pragma mark - 更新跑步信息

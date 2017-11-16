@@ -18,4 +18,6 @@
 @property (nonatomic, assign) NSInteger steps;
 @property (nonatomic, assign) NSInteger all_points;
 
++ (NSString *)dateToString;
+
 @end
