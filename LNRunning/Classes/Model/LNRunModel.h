@@ -10,7 +10,7 @@
 
 @interface LNRunModel : NSObject
 
-@property (nonatomic, copy) NSString *_id;
+@property (nonatomic, assign) NSInteger _id;
 @property (nonatomic, copy) NSString *startTime;
 @property (nonatomic, copy) NSString *endTime;
 @property (nonatomic, assign) NSInteger duration;

@@ -11,6 +11,12 @@
 #import "LNSportsDetailModel.h"
 #import "DBManager.h"
 
+@interface RunManager()
+
+@property (nonatomic, assign) NSInteger runID;
+
+@end
+
 @implementation RunManager
 
 #pragma mark - 单例管理
@@ -129,6 +135,10 @@ static RunManager *_lnRunManager = nil;
 //    self.infoModel.target = 0;
 //    [[LNDBManager shareInstance] insertInfoModel:self.infoModel];
 //    [[DBManager shareInstance] insertInfoModel:self.infoModel];
+    self.infoModel.startTime = [LNRunModel dateToString];
+    [[DBManager shareInstance] insertInfoModel:self.infoModel];
+    self.runID = [[DBManager shareInstance] queryRunIDBy:self.infoModel.startTime];
+    NSLog(@"%ld", self.runID);
 }
 
 #pragma mark - 更新跑步信息
@@ -195,5 +205,13 @@ static RunManager *_lnRunManager = nil;
 //    }
 //    return _infoModel;
 //}
+
+- (LNRunModel *)infoModel {
+    if (!_infoModel) {
+        _infoModel = [[LNRunModel alloc] init];
+    }
+    
+    return _infoModel;
+}
 
 @end

@@ -37,6 +37,13 @@
         [WHC_ModelSqlite insert:model];
     }
     NSLog(@"db path = %@", [WHC_ModelSqlite localPathWithModel:[LNRunModel class]]);
+    
+    NSArray *array = [WHC_ModelSqlite query:[LNRunModel class]];
+    for (LNRunModel *model in array) {
+        NSLog(@"%@", model);
+    }
+    
+    [WHC_ModelSqlite removeModel:[LNRunModel class]];
 }
 
 - (void)didReceiveMemoryWarning {

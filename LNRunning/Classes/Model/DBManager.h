@@ -37,6 +37,8 @@
  */
 - (void)insertDetailModel:(LNRunPointModel *)model;
 
+- (NSInteger)queryRunIDBy:(NSString *)startTime;
+
 /**
  获取到RunID后 更新Info表中的Runid
  

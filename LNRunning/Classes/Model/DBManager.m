@@ -8,6 +8,7 @@
 
 #import "DBManager.h"
 #import "WHC_ModelSqlite.h"
+#import "LNRunModel.h"
 
 @implementation DBManager
 
@@ -45,6 +46,18 @@ static DBManager *_lnDBManager = nil;
 
 - (void)insertInfoModel:(LNRunModel *)model {
     [WHC_ModelSqlite insert:model];
+}
+
+- (NSInteger)queryRunIDBy:(NSString *)startTime {
+    NSString *sql = [NSString stringWithFormat:@"startTime = '%@'", startTime];
+    NSArray *arr = [WHC_ModelSqlite query:[LNRunModel class]];
+    NSLog(@"%@", arr);
+    NSArray *result = [WHC_ModelSqlite query:[LNRunModel class] where:sql];
+    if ([result count] > 0) {
+        LNRunModel *model = [result firstObject];
+        return model._id;
+    }
+    return 0;
 }
 
 @end
