@@ -10,72 +10,72 @@ import UIKit
 
 class LNRunningTimer: NSObject {
     //MARK: var property
-    private var timeLabel: UILabel!
-    private var timer: NSTimer?
+    fileprivate var timeLabel: UILabel!
+    fileprivate var timer: Timer?
     //开始和结束时间列表
-    lazy private var startTimes = [NSDate]()
-    lazy private var endTimes = [NSDate]()
+    lazy fileprivate var startTimes = [Date]()
+    lazy fileprivate var endTimes = [Date]()
     
-    internal var timeNumber = 0 {
+    @objc internal var timeNumber = 0 {
         didSet {
             timeString = NSString.timeFormatted(timeNumber)
         }
     }
     
-    internal private(set) var timeString = "00:00:00" {
+    internal fileprivate(set) var timeString = "00:00:00" {
         didSet {
             timeLabel.text = timeString
         }
     }
     
     //MARK: - 初始化
-    init(timeLabel: UILabel) {
+    @objc init(timeLabel: UILabel) {
         self.timeLabel = timeLabel
         timeLabel.text = timeString
     }
     
     //MARK: - 计时器
-    private func timeCount(){
+    @objc fileprivate func timeCount(){
         if startTimes.count == 1 {
-            let currentTime = NSDate()
-            timeNumber = Int(CFDateGetTimeIntervalSinceDate(currentTime, startTimes[0]))
+            let currentTime = Date()
+            timeNumber = Int(CFDateGetTimeIntervalSinceDate(currentTime as CFDate!, startTimes[0] as CFDate!))
         }else{
             if startTimes.count - endTimes.count == 1 {
-                endTimes.append(NSDate())
+                endTimes.append(Date())
             }
             let index = startTimes.count - 1
-            endTimes[index] = NSDate()
+            endTimes[index] = Date()
             var timeCount = 0
             for startTime in startTimes{
-                timeCount += Int(CFDateGetTimeIntervalSinceDate(endTimes[startTimes.indexOf(startTime)!],startTime))
+                timeCount += Int(CFDateGetTimeIntervalSinceDate(endTimes[startTimes.index(of: startTime)!] as CFDate!,startTime as CFDate!))
             }
             timeNumber = timeCount
         }
     }
     
-    @objc private func count(){
+    @objc fileprivate func count(){
         timeCount()
     }
     
     //计时开始
-    func timingStart(){
-        startTimes.append(NSDate())
-        timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(self.count), userInfo: nil, repeats: true)
+    @objc func timingStart(){
+        startTimes.append(Date())
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.count), userInfo: nil, repeats: true)
     }
     
     //暂停计时
-    func timingPause(){
-        endTimes.append(NSDate())
+    @objc func timingPause(){
+        endTimes.append(Date())
         timer?.invalidate()
     }
     
     //暂停后继续计时
-    func timingContinue(){
+    @objc func timingContinue(){
         timingStart()
     }
     
     //重置Timer
-    func resetToStart() {
+    @objc func resetToStart() {
         startTimes = []
         endTimes = []
         timer?.invalidate()
@@ -83,7 +83,7 @@ class LNRunningTimer: NSObject {
     }
     
     //获得当前运动时间
-    func getCurrentRunningTime() -> Int {
+    @objc func getCurrentRunningTime() -> Int {
         return timeNumber
     }
 }

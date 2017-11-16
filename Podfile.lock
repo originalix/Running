@@ -1,7 +1,7 @@
 PODS:
-  - AMap3DMap (4.6.1):
+  - AMap3DMap (5.4.0):
     - AMapFoundation (~> 1.3)
-  - AMapFoundation (1.3.3)
+  - AMapFoundation (1.4.2)
   - Bugly (2.4.6)
   - FMDB (2.6.2):
     - FMDB/standard (= 2.6.2)
@@ -11,7 +11,7 @@ PODS:
   - YYModel (1.0.4)
 
 DEPENDENCIES:
-  - AMap3DMap
+  - AMap3DMap (= 5.4.0)
   - Bugly
   - FMDB (~> 2.6.2)
   - LixFoundation (~> 0.0.5)
@@ -19,14 +19,14 @@ DEPENDENCIES:
   - YYModel
 
 SPEC CHECKSUMS:
-  AMap3DMap: eb6656fb441ed7eb310b3c121032e947d4d649e5
-  AMapFoundation: c086329a1f19afec00e4c197863665235eb43dc2
+  AMap3DMap: 3eb906ac6b9d488413ab26c24f67eca4b4ad4641
+  AMapFoundation: 6c0471c9a6a0ad17dad46e3d800ad56ca170f82a
   Bugly: 7756e72c59387b0d490f46e83ab458ae94ee7fba
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   LixFoundation: edb8dcb9c9f0a9c0027f135e13013297aeb3840e
   ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 4f7da1e7b2c981767e408e3682f5699e7e1b5603
+PODFILE CHECKSUM: 0dad6cedc6b8bbc11cf0871be7799c1414d3903a
 
 COCOAPODS: 1.3.1

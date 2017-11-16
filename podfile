@@ -5,7 +5,8 @@ target 'LNRunning' do
 # pod 'ReactiveCocoa', '~> 4.2.2'
 pod 'ReactiveObjC', '~> 3.0.0'
 pod 'LixFoundation', '~> 0.0.5'
-pod 'AMap3DMap'  #3D地图 SDK
+# pod 'AMap3DMap'  #3D地图 SDK
+pod 'AMap3DMap', '5.4.0' 
 pod 'FMDB', '~> 2.6.2'
 pod 'Bugly'
 pod 'YYModel'

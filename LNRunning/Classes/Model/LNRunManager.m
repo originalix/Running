@@ -65,7 +65,7 @@ static LNRunManager *_lnRunManager = nil;
         runData(self.distance, self.speedString, self.pace);
     }
     [self savePointData:userLocation];
-//    DLog(@"时间 = %ld,\n 点耗时 = %ld,\n 点距离 = %ld,\n 点步数 = %ld,\n lastStep = %ld,\n 距离 = %f,\n 配速 = %@, \n 速度 = %@,\n 点数 = %ld,\n 错误点数 = %ld,\n", self.time, self.pointDuration, self.pointDistance, self.pointStep, self.lastStep, self.distance, self.pace, self.speedString,self.pointIndex, self.invalidPointIndex);
+    DLog(@"时间 = %ld,\n 点耗时 = %ld,\n 点距离 = %ld,\n 点步数 = %ld,\n lastStep = %ld,\n 距离 = %f,\n 配速 = %@, \n 速度 = %@,\n 点数 = %ld,\n 错误点数 = %ld,\n", self.time, self.pointDuration, self.pointDistance, self.pointStep, self.lastStep, self.distance, self.pace, self.speedString,self.pointIndex, self.invalidPointIndex);
 }
 
 //运动距离
@@ -116,7 +116,7 @@ static LNRunManager *_lnRunManager = nil;
     if (stepData) {
         stepData(self.step, self.stride, self.frequency);
     }
-//    DLog(@"步数 = %ld,\n 步频 = %ld,\n 步幅 = %ld,\n", self.step, self.frequency, self.stride);
+    DLog(@"步数 = %ld,\n 步频 = %ld,\n 步幅 = %ld,\n", self.step, self.frequency, self.stride);
 }
 
 #pragma mark - 跑步初始化

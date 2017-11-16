@@ -9,7 +9,7 @@
 import Foundation
 
 //从以秒计时的时间里获得表示时间的字符串用于显示
-func getTimeStringFromSecond(seconds: Int) -> String {
+func getTimeStringFromSecond(_ seconds: Int) -> String {
     
     let secondNumber = seconds % 60
     let minuteNumber = (seconds / 60) % 60

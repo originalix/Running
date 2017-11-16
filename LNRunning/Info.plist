@@ -29,6 +29,8 @@
 	<string>永久使用定位权限</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>使用定位权限</string>
+	<key>NSMotionUsageDescription</key>
+	<string>使用motion</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>location</string>
