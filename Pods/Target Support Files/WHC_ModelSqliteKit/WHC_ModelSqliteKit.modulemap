@@ -1,0 +1,6 @@
+framework module WHC_ModelSqliteKit {
+  umbrella header "WHC_ModelSqliteKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

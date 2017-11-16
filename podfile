@@ -10,5 +10,6 @@ pod 'AMap3DMap', '5.4.0'
 pod 'FMDB', '~> 2.6.2'
 pod 'Bugly'
 pod 'YYModel'
+pod 'WHC_ModelSqliteKit', '1.2.8'
 end
 

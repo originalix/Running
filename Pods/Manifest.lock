@@ -8,6 +8,9 @@ PODS:
   - FMDB/standard (2.6.2)
   - LixFoundation (0.0.5)
   - ReactiveObjC (3.0.0)
+  - WHC_ModelSqliteKit (1.2.8):
+    - WHC_ModelSqliteKit/standard (= 1.2.8)
+  - WHC_ModelSqliteKit/standard (1.2.8)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
@@ -16,6 +19,7 @@ DEPENDENCIES:
   - FMDB (~> 2.6.2)
   - LixFoundation (~> 0.0.5)
   - ReactiveObjC (~> 3.0.0)
+  - WHC_ModelSqliteKit (= 1.2.8)
   - YYModel
 
 SPEC CHECKSUMS:
@@ -25,8 +29,9 @@ SPEC CHECKSUMS:
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   LixFoundation: edb8dcb9c9f0a9c0027f135e13013297aeb3840e
   ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
+  WHC_ModelSqliteKit: 88a0c257204ad248b0d0a99811d809d47e24b35c
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 0dad6cedc6b8bbc11cf0871be7799c1414d3903a
+PODFILE CHECKSUM: 136d02ac379e4162810bc809db68a095b16859d9
 
 COCOAPODS: 1.3.1

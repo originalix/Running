@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '6A1CDB61F86485D03D6D98EE1DA0250A'
-               BlueprintName = 'ReactiveObjC'
+               BlueprintIdentifier = 'B0409EE8C90C9E1CF881774B5FDBCC70'
+               BlueprintName = 'WHC_ModelSqliteKit'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'ReactiveObjC.framework'>
+               BuildableName = 'WHC_ModelSqliteKit.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

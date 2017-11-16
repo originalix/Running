@@ -32,6 +32,8 @@
 		56CFB8D31E4C4C01009E2FC4 /* LixMarcoSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CFB8D21E4C4C01009E2FC4 /* LixMarcoSwift.swift */; };
 		56CFB8DE1E4C5582009E2FC4 /* LNStepCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CFB8DD1E4C5582009E2FC4 /* LNStepCounter.swift */; };
 		56CFB8E41E4C6036009E2FC4 /* LNRunManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CFB8E31E4C6036009E2FC4 /* LNRunManager.m */; };
+		56D1B29F1FBD38050031D6F9 /* LNRunModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D1B29E1FBD38050031D6F9 /* LNRunModel.m */; };
+		56D1B2A21FBD38180031D6F9 /* LNRunPointModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D1B2A11FBD38180031D6F9 /* LNRunPointModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +102,10 @@
 		56CFB8DD1E4C5582009E2FC4 /* LNStepCounter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LNStepCounter.swift; sourceTree = "<group>"; };
 		56CFB8E21E4C6036009E2FC4 /* LNRunManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNRunManager.h; sourceTree = "<group>"; };
 		56CFB8E31E4C6036009E2FC4 /* LNRunManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNRunManager.m; sourceTree = "<group>"; };
+		56D1B29D1FBD38050031D6F9 /* LNRunModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNRunModel.h; sourceTree = "<group>"; };
+		56D1B29E1FBD38050031D6F9 /* LNRunModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNRunModel.m; sourceTree = "<group>"; };
+		56D1B2A01FBD38180031D6F9 /* LNRunPointModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNRunPointModel.h; sourceTree = "<group>"; };
+		56D1B2A11FBD38180031D6F9 /* LNRunPointModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNRunPointModel.m; sourceTree = "<group>"; };
 		9B6C42E619BFAA5CB291695C /* Pods-LNRunning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LNRunning.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LNRunning/Pods-LNRunning.debug.xcconfig"; sourceTree = "<group>"; };
 		F612F74188E89712A0623000 /* Pods_LNRunning.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LNRunning.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9FFFDAAAC5A133BDC79B361 /* Pods-LNRunning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LNRunning.release.xcconfig"; path = "Pods/Target Support Files/Pods-LNRunning/Pods-LNRunning.release.xcconfig"; sourceTree = "<group>"; };
@@ -247,6 +253,10 @@
 				566007391E4D9EE200522D01 /* LNGetPaceModel.h */,
 				5660073A1E4D9EE200522D01 /* LNGetPaceModel.m */,
 				560790201FBD2A1200216B81 /* LNRecoverTimer.swift */,
+				56D1B29D1FBD38050031D6F9 /* LNRunModel.h */,
+				56D1B29E1FBD38050031D6F9 /* LNRunModel.m */,
+				56D1B2A01FBD38180031D6F9 /* LNRunPointModel.h */,
+				56D1B2A11FBD38180031D6F9 /* LNRunPointModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -486,6 +496,7 @@
 				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
 				"${BUILT_PRODUCTS_DIR}/LixFoundation/LixFoundation.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
+				"${BUILT_PRODUCTS_DIR}/WHC_ModelSqliteKit/WHC_ModelSqliteKit.framework",
 				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -493,6 +504,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LixFoundation.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WHC_ModelSqliteKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -510,6 +522,7 @@
 				56CFB8D31E4C4C01009E2FC4 /* LixMarcoSwift.swift in Sources */,
 				5659BE461E514E6F00821A80 /* LNSportTracking.m in Sources */,
 				566718861E4C2CA800C51E73 /* ViewController.m in Sources */,
+				56D1B29F1FBD38050031D6F9 /* LNRunModel.m in Sources */,
 				56CFB8D11E4C4B69009E2FC4 /* LNRunningTimer.swift in Sources */,
 				560790241FBD2A7100216B81 /* RecoverTimerViewController.m in Sources */,
 				5659BE471E514E6F00821A80 /* LNSportTrackingLine.m in Sources */,
@@ -522,6 +535,7 @@
 				56CFB8DE1E4C5582009E2FC4 /* LNStepCounter.swift in Sources */,
 				566718831E4C2CA800C51E73 /* AppDelegate.m in Sources */,
 				566718801E4C2CA800C51E73 /* main.m in Sources */,
+				56D1B2A21FBD38180031D6F9 /* LNRunPointModel.m in Sources */,
 				566007341E4D958900522D01 /* LNSportsDetailModel.m in Sources */,
 				566718BD1E4C382000C51E73 /* LNMapView.m in Sources */,
 				566007371E4D978D00522D01 /* LNDBManager.m in Sources */,
