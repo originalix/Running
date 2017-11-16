@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		176C5570EE62F4DFA57A05CE /* Pods_LNRunning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F612F74188E89712A0623000 /* Pods_LNRunning.framework */; };
+		560790211FBD2A1200216B81 /* LNRecoverTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560790201FBD2A1200216B81 /* LNRecoverTimer.swift */; };
 		5659BE451E514E6F00821A80 /* LNPolyLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5659BE401E514E6F00821A80 /* LNPolyLine.m */; };
 		5659BE461E514E6F00821A80 /* LNSportTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5659BE421E514E6F00821A80 /* LNSportTracking.m */; };
 		5659BE471E514E6F00821A80 /* LNSportTrackingLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5659BE441E514E6F00821A80 /* LNSportTrackingLine.m */; };
@@ -50,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		560790201FBD2A1200216B81 /* LNRecoverTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LNRecoverTimer.swift; sourceTree = "<group>"; };
 		5659BE3F1E514E6F00821A80 /* LNPolyLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNPolyLine.h; sourceTree = "<group>"; };
 		5659BE401E514E6F00821A80 /* LNPolyLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNPolyLine.m; sourceTree = "<group>"; };
 		5659BE411E514E6F00821A80 /* LNSportTracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNSportTracking.h; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 				566007361E4D978D00522D01 /* LNDBManager.m */,
 				566007391E4D9EE200522D01 /* LNGetPaceModel.h */,
 				5660073A1E4D9EE200522D01 /* LNGetPaceModel.m */,
+				560790201FBD2A1200216B81 /* LNRecoverTimer.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -509,6 +512,7 @@
 				566007311E4D955F00522D01 /* LNSportsInfoModel.m in Sources */,
 				5660073B1E4D9EE200522D01 /* LNGetPaceModel.m in Sources */,
 				566718B71E4C2D7B00C51E73 /* LNRunBaseViewController.m in Sources */,
+				560790211FBD2A1200216B81 /* LNRecoverTimer.swift in Sources */,
 				56CFB8DE1E4C5582009E2FC4 /* LNStepCounter.swift in Sources */,
 				566718831E4C2CA800C51E73 /* AppDelegate.m in Sources */,
 				566718801E4C2CA800C51E73 /* main.m in Sources */,
