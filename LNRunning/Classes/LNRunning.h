@@ -17,5 +17,6 @@
 #import "YYModel.h"
 #import "LNDBManager.h"
 #import "LNSportTracking.h"
+#import "WHC_ModelSqlite.h"
 
 #endif /* LNRunning_h */

@@ -10,4 +10,12 @@
 
 @interface LNRunModel : NSObject
 
+@property (nonatomic, copy) NSString *_id;
+@property (nonatomic, copy) NSString *startTime;
+@property (nonatomic, copy) NSString *endTime;
+@property (nonatomic, assign) NSInteger duration;
+@property (nonatomic, assign) NSInteger distance;
+@property (nonatomic, assign) NSInteger steps;
+@property (nonatomic, assign) NSInteger all_points;
+
 @end
