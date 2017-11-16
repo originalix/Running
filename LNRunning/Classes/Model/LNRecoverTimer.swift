@@ -57,9 +57,9 @@ class LNRecoverTimer: NSObject {
             endTimes[index] = Date()
             var timeCount = 0
             for startTime in startTimes{
-                timeCount += (Int(CFDateGetTimeIntervalSinceDate(endTimes[startTimes.index(of: startTime)!] as CFDate!,startTime as CFDate!)) + beforeTimeNumber)
+                timeCount += Int(CFDateGetTimeIntervalSinceDate(endTimes[startTimes.index(of: startTime)!] as CFDate!,startTime as CFDate!))
             }
-            timeNumber = timeCount
+            timeNumber = timeCount + beforeTimeNumber
         }
     }
     
