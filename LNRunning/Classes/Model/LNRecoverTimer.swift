@@ -96,4 +96,8 @@ class LNRecoverTimer: NSObject {
     @objc func getCurrentRunningTime() -> Int {
         return timeNumber
     }
+    
+//    @objc static func test() {
+//        print("123")
+//    }
 }

@@ -26,6 +26,7 @@
 //    self.timer = [[LNRecoverTimer alloc] initWithTimeLabel:self.timeLabel];
     self.timer = [[LNRecoverTimer alloc] initWithTimeLabel:self.timeLabel beforeTimeNumber:60];
     self.timeLabel.text = [NSString timeFormatted:60];
+//    [LNRecoverTimer test];
 }
 
 - (void)didReceiveMemoryWarning {
