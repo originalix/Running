@@ -18,6 +18,8 @@ class LNRecoverTimer: NSObject {
     lazy fileprivate var startTimes = [Date]()
     lazy fileprivate var endTimes = [Date]()
     
+    @objc var beforeTimeNumber = 0
+    
     @objc internal var timeNumber = 0 {
         didSet {
             timeString = NSString.timeFormatted(timeNumber)
@@ -36,11 +38,17 @@ class LNRecoverTimer: NSObject {
         timeLabel.text = timeString
     }
     
+    @objc init(timeLabel: UILabel, beforeTimeNumber: Int) {
+        self.timeLabel = timeLabel
+        timeLabel.text = timeString
+        self.beforeTimeNumber = beforeTimeNumber
+    }
+    
     //MARK: - 计时器
     @objc fileprivate func timeCount(){
         if startTimes.count == 1 {
             let currentTime = Date()
-            timeNumber = Int(CFDateGetTimeIntervalSinceDate(currentTime as CFDate!, startTimes[0] as CFDate!))
+            timeNumber = Int(CFDateGetTimeIntervalSinceDate(currentTime as CFDate!, startTimes[0] as CFDate!)) + beforeTimeNumber
         }else{
             if startTimes.count - endTimes.count == 1 {
                 endTimes.append(Date())
@@ -49,7 +57,7 @@ class LNRecoverTimer: NSObject {
             endTimes[index] = Date()
             var timeCount = 0
             for startTime in startTimes{
-                timeCount += Int(CFDateGetTimeIntervalSinceDate(endTimes[startTimes.index(of: startTime)!] as CFDate!,startTime as CFDate!))
+                timeCount += (Int(CFDateGetTimeIntervalSinceDate(endTimes[startTimes.index(of: startTime)!] as CFDate!,startTime as CFDate!)) + beforeTimeNumber)
             }
             timeNumber = timeCount
         }

@@ -22,7 +22,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.timer = [[LNRecoverTimer alloc] initWithTimeLabel:self.timeLabel];
+//    self.timer = [[LNRecoverTimer alloc] initWithTimeLabel:self.timeLabel];
+    self.timer = [[LNRecoverTimer alloc] initWithTimeLabel:self.timeLabel beforeTimeNumber:60];
 }
 
 - (void)didReceiveMemoryWarning {
