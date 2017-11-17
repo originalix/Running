@@ -157,10 +157,15 @@ static RunManager *_lnRunManager = nil;
 #pragma mark - 存储运动数据
 - (void)savePointData:(CLLocation *)location {
 #warning ++++++++++++=
-//    LNSportsDetailModel *model = [[LNSportsDetailModel alloc] init];
-//    model.runID = self.infoModel.id;
+    while (self.runID == 0) {
+        self.runID = [[DBManager shareInstance] queryRunIDBy:self.infoModel.startTime];
+    }
+    
+    LNSportsDetailModel *model = [[LNSportsDetailModel alloc] init];
+    model.runID = self.runID;
 //    model.uid = self.infoModel.uid;
-//    model.startTime = [[NSDate date] timeIntervalSince1970] - self.pointDuration;
+    model.startTime = [[NSDate date] timeIntervalSince1970] - self.pointDuration;
+    []
 //    model.latitude = location.coordinate.latitude;
 //    model.longitude = location.coordinate.longitude;
 //    model.altitude = location.altitude;

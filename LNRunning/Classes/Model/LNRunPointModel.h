@@ -19,4 +19,6 @@
 @property (nonatomic, assign) NSInteger duration;
 @property (nonatomic, assign) NSInteger steps;
 
++ (NSString *)timestampToString:(NSString *)interval;
+
 @end
