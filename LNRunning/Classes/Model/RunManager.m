@@ -12,6 +12,7 @@
 //#import "LNSportsDetailModel.h"
 #import "DBManager.h"
 #import "CuteLog-Swift.h"
+#import "LNRunning-Swift.h"
 
 @interface RunManager()
 
@@ -76,6 +77,7 @@ static RunManager *_lnRunManager = nil;
     [self savePointData:userLocation];
     DLog(@"时间 = %ld,\n 点耗时 = %ld,\n 点距离 = %ld,\n 点步数 = %ld,\n lastStep = %ld,\n 距离 = %f,\n 配速 = %@, \n 速度 = %@,\n 点数 = %ld,\n 错误点数 = %ld,\n", self.time, self.pointDuration, self.pointDistance, self.pointStep, self.lastStep, self.distance, self.pace, self.speedString,self.pointIndex, self.invalidPointIndex);
     NSString *log = [NSString stringWithFormat:@"保存点位信息 -> 时间 = %ld,\n 点耗时 = %ld,\n 点距离 = %ld,\n 点步数 = %ld,\n lastStep = %ld,\n 距离 = %f,\n 配速 = %@, \n 速度 = %@,\n 点数 = %ld,\n 错误点数 = %ld,\n", self.time, self.pointDuration, self.pointDistance, self.pointStep, self.lastStep, self.distance, self.pace, self.speedString,self.pointIndex, self.invalidPointIndex];
+    [TinyObject greenLogWithString:log];
     Cute_Debug(log)
 }
 
@@ -139,6 +141,7 @@ static RunManager *_lnRunManager = nil;
 //    self.infoModel.target = 0;
 //    [[LNDBManager shareInstance] insertInfoModel:self.infoModel];
 //    [[DBManager shareInstance] insertInfoModel:self.infoModel];
+    [TinyObject yellowLogWithString:@"跑步初始化"];
     Cute_Debug(@"跑步初始化")
     self.infoModel.startTime = [LNRunModel dateToString];
     [[DBManager shareInstance] insertInfoModel:self.infoModel];
@@ -164,6 +167,7 @@ static RunManager *_lnRunManager = nil;
     self.infoModel.steps = self.step;
     self.infoModel.all_points = self.pointIndex;
     [[DBManager shareInstance] updateInfoModel:self.infoModel];
+    [TinyObject yellowLogWithString: [NSString stringWithFormat:@"更新跑步信息--> : %@", self.infoModel.description]];
 }
 
 #pragma mark - 存储运动数据
@@ -183,7 +187,8 @@ static RunManager *_lnRunManager = nil;
     model.duration = self.pointDuration;
     model.steps = self.pointStep;
     [[DBManager shareInstance] insertDetailModel:model];
-    
+    [TinyObject yellowLogWithString:[NSString stringWithFormat:@"存储点位信息--> : %@", model.debugDescription]];
+    [TinyObject addMarker];
     Cute_Debug(model.description)
     
 //    LNSportsDetailModel *model = [[LNSportsDetailModel alloc] init];
@@ -211,6 +216,7 @@ static RunManager *_lnRunManager = nil;
 //    [[LNDBManager shareInstance] updateInfoModel:self.infoModel];
 //    [[LNDBManager shareInstance] deleteInfoData:[LNDBManager SPORT_INFO_TABLE]  id:[NSString stringWithFormat:@"%ld", self.infoModel.id]];
     BLYLogInfo(@"------>1 删除数据");
+    [TinyObject redLogWithString:@"直接取消跑步，删除跑步数据"];
     Cute_Debug(@"直接取消跑步，删除跑步数据")
 }
 
@@ -222,8 +228,10 @@ static RunManager *_lnRunManager = nil;
     self.infoModel.steps = self.step;
     self.infoModel.all_points = self.pointIndex;
     [[DBManager shareInstance] updateInfoModel:self.infoModel];
+    [TinyObject redLogWithString:@"完成跑步，保存信息"];
+    [TinyObject redLogWithString:self.infoModel.debugDescription];
     Cute_Debug(@"完成跑步，保存信息")
-    Cute_Debug(self.infoModel.description)
+    Cute_Debug(self.infoModel.debugDescription)
 //    self.infoModel.endTime = (NSInteger)[[NSDate date] timeIntervalSince1970];
 //    self.infoModel.inputTime = 0;
 //    self.infoModel.duration = self.infoModel.endTime - self.infoModel.startTime;

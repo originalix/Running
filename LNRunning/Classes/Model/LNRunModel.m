@@ -39,4 +39,8 @@
     return [date timeIntervalSince1970];
 }
 
+- (NSString *)description {
+    return [NSString stringWithFormat:@"开始时间: %@, 结束时间: %@, 耗时: %ld, 距离: %ld, 步数: %ld, 总点数: %ld", self.startTime, self.endTime, self.duration, self.distance, self.steps, self.all_points];
+}
+
 @end
