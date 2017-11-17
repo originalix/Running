@@ -53,7 +53,8 @@
  @param tableName TABLENAME
  @param id  ID
  */
-- (void)deleteInfoData:(NSString *)tableName id:(NSString *)id;
+//- (void)deleteInfoData:(NSString *)tableName id:(NSString *)id;
+- (void)deleteInfoData:(LNRunModel *)model;
 
 /**
  获取列表条数

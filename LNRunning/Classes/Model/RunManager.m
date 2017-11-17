@@ -194,6 +194,8 @@ static RunManager *_lnRunManager = nil;
 #pragma mark - 结束跑步
 - (void)cancelRunning {
 #warning +++++++++++
+    [[DBManager shareInstance] updateInfoModel:self.infoModel];
+    [[DBManager shareInstance] deleteInfoData:self.infoModel];
 //    [[LNDBManager shareInstance] updateInfoModel:self.infoModel];
 //    [[LNDBManager shareInstance] deleteInfoData:[LNDBManager SPORT_INFO_TABLE]  id:[NSString stringWithFormat:@"%ld", self.infoModel.id]];
     BLYLogInfo(@"------>1 删除数据");
@@ -201,6 +203,12 @@ static RunManager *_lnRunManager = nil;
 
 - (void)finishRunning {
 #warning +++++++++++++++
+    self.infoModel.endTime = [LNRunModel dateToString];
+    self.infoModel.duration = 0;
+    self.infoModel.distance = self.distance * 1000;
+    self.infoModel.steps = self.step;
+    self.infoModel.all_points = self.pointIndex;
+    [[DBManager shareInstance] updateInfoModel:self.infoModel];
 //    self.infoModel.endTime = (NSInteger)[[NSDate date] timeIntervalSince1970];
 //    self.infoModel.inputTime = 0;
 //    self.infoModel.duration = self.infoModel.endTime - self.infoModel.startTime;

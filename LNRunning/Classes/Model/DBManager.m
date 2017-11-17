@@ -60,4 +60,18 @@ static DBManager *_lnDBManager = nil;
     return 0;
 }
 
+- (void)insertDetailModel:(LNRunPointModel *)model {
+    [WHC_ModelSqlite insert:model];
+}
+
+- (void)updateInfoModel:(LNRunModel *)model {
+    NSString *sql = [NSString stringWithFormat:@"startTime = '%@'", model.startTime];
+    [WHC_ModelSqlite update:model where:sql];
+}
+
+- (void)deleteInfoData:(LNRunModel *)model {
+    NSString *sql = [NSString stringWithFormat:@"startTime = '%@'", model.startTime];
+    [WHC_ModelSqlite delete:[LNRunModel class] where:sql];
+}
+
 @end
