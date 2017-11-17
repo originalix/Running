@@ -8,7 +8,8 @@
 
 #import "RunManager.h"
 #import "LNRunning.h"
-#import "LNSportsDetailModel.h"
+#include "LNRunPointModel.h"
+//#import "LNSportsDetailModel.h"
 #import "DBManager.h"
 
 @interface RunManager()
@@ -161,11 +162,22 @@ static RunManager *_lnRunManager = nil;
         self.runID = [[DBManager shareInstance] queryRunIDBy:self.infoModel.startTime];
     }
     
-    LNSportsDetailModel *model = [[LNSportsDetailModel alloc] init];
-    model.runID = self.runID;
+    LNRunPointModel *model = [[LNRunPointModel alloc] init];
+    model.runId = self.runID;
+    model.time = [LNRunPointModel timestampToString:[[NSDate date] timeIntervalSince1970] - self.pointDuration];
+    model.latitude = location.coordinate.latitude;
+    model.longitude = location.coordinate.longitude;
+    model.accuration = (NSInteger)location.horizontalAccuracy;
+    model.distance = self.pointDistance;
+    model.duration = self.pointDuration;
+    model.steps = self.pointStep;
+    [[DBManager shareInstance] insertDetailModel:model];
+    
+    
+//    LNSportsDetailModel *model = [[LNSportsDetailModel alloc] init];
+//    model.runID = self.runID;
 //    model.uid = self.infoModel.uid;
-    model.startTime = [[NSDate date] timeIntervalSince1970] - self.pointDuration;
-    []
+//    model.startTime = [[NSDate date] timeIntervalSince1970] - self.pointDuration;
 //    model.latitude = location.coordinate.latitude;
 //    model.longitude = location.coordinate.longitude;
 //    model.altitude = location.altitude;

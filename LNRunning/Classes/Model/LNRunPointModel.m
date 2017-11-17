@@ -10,8 +10,8 @@
 
 @implementation LNRunPointModel
 
-+ (NSString *)timestampToString:(NSString *)interval {
-    NSTimeInterval time=[interval doubleValue];//如果不使用本地时区,因为时差问题要加8小时 == 28800 sec
++ (NSString *)timestampToString:(NSInteger)interval {
+    NSTimeInterval time = interval;  //如果不使用本地时区,因为时差问题要加8小时 == 28800 sec
     NSDate *detaildate=[NSDate dateWithTimeIntervalSince1970:time];
     
     //实例化一个NSDateFormatter对象
