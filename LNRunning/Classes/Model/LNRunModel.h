@@ -20,4 +20,6 @@
 
 + (NSString *)dateToString;
 
+- (NSInteger)getDuration;
+
 @end

@@ -153,6 +153,13 @@ static RunManager *_lnRunManager = nil;
 //    self.infoModel.points = self.pointIndex;
 //    self.infoModel.invalidPoints = self.invalidPointIndex;
 //    [[LNDBManager shareInstance] updateInfoModel:self.infoModel];
+    
+    self.infoModel.endTime = [LNRunModel dateToString];
+    self.infoModel.duration = [self.infoModel getDuration];
+    self.infoModel.distance = self.distance * 1000;
+    self.infoModel.steps = self.step;
+    self.infoModel.all_points = self.pointIndex;
+    [[DBManager shareInstance] updateInfoModel:self.infoModel];
 }
 
 #pragma mark - 存储运动数据
@@ -204,7 +211,7 @@ static RunManager *_lnRunManager = nil;
 - (void)finishRunning {
 #warning +++++++++++++++
     self.infoModel.endTime = [LNRunModel dateToString];
-    self.infoModel.duration = 0;
+    self.infoModel.duration = [self.infoModel getDuration];
     self.infoModel.distance = self.distance * 1000;
     self.infoModel.steps = self.step;
     self.infoModel.all_points = self.pointIndex;

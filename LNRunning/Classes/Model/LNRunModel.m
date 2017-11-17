@@ -25,4 +25,18 @@
     return [formatter stringFromDate:[NSDate date]];
 }
 
+- (NSInteger)getDuration {
+    NSInteger endTime = [self p_DateStringToTimestamp:self.endTime];
+    NSInteger startTime = [self p_DateStringToTimestamp:self.startTime];
+    NSInteger duration = endTime - startTime;
+    return duration > 0 ? duration : 0;
+}
+
+- (NSInteger)p_DateStringToTimestamp:(NSString *)dateString {
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    formatter.dateFormat = @"yyyy-MM-dd HH:mm:ss";
+    NSDate *date = [formatter dateFromString:dateString];
+    return [date timeIntervalSince1970];
+}
+
 @end
