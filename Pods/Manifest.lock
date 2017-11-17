@@ -3,11 +3,15 @@ PODS:
     - AMapFoundation (~> 1.3)
   - AMapFoundation (1.4.2)
   - Bugly (2.4.6)
+  - CuteLog (0.0.6):
+    - SSZipArchive (~> 1.8.1)
   - FMDB (2.6.2):
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
   - LixFoundation (0.0.5)
   - ReactiveObjC (3.0.0)
+  - SSZipArchive (1.8.1)
+  - TinyConsole (1.3.2)
   - WHC_ModelSqliteKit (1.2.8):
     - WHC_ModelSqliteKit/standard (= 1.2.8)
   - WHC_ModelSqliteKit/standard (1.2.8)
@@ -16,9 +20,11 @@ PODS:
 DEPENDENCIES:
   - AMap3DMap (= 5.4.0)
   - Bugly
+  - CuteLog (~> 0.0.6)
   - FMDB (~> 2.6.2)
   - LixFoundation (~> 0.0.5)
   - ReactiveObjC (~> 3.0.0)
+  - TinyConsole (~> 1.3.2)
   - WHC_ModelSqliteKit (= 1.2.8)
   - YYModel
 
@@ -26,12 +32,15 @@ SPEC CHECKSUMS:
   AMap3DMap: 3eb906ac6b9d488413ab26c24f67eca4b4ad4641
   AMapFoundation: 6c0471c9a6a0ad17dad46e3d800ad56ca170f82a
   Bugly: 7756e72c59387b0d490f46e83ab458ae94ee7fba
+  CuteLog: 62191f34c1d9f82d7d55617af7fa70b798b30241
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   LixFoundation: edb8dcb9c9f0a9c0027f135e13013297aeb3840e
   ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
+  SSZipArchive: 04547dfa448be5ed7ecbaf7eaf8a6e9eb9b42997
+  TinyConsole: 8e057f494b7c0229fa382881b3715350fcff71fd
   WHC_ModelSqliteKit: 88a0c257204ad248b0d0a99811d809d47e24b35c
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 136d02ac379e4162810bc809db68a095b16859d9
+PODFILE CHECKSUM: 34ef5c67cee6c1f5b853c01b53dadf6bbe73e251
 
 COCOAPODS: 1.3.1

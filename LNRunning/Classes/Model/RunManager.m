@@ -11,6 +11,7 @@
 #include "LNRunPointModel.h"
 //#import "LNSportsDetailModel.h"
 #import "DBManager.h"
+#import "CuteLog-Swift.h"
 
 @interface RunManager()
 
@@ -74,6 +75,8 @@ static RunManager *_lnRunManager = nil;
     }
     [self savePointData:userLocation];
     DLog(@"时间 = %ld,\n 点耗时 = %ld,\n 点距离 = %ld,\n 点步数 = %ld,\n lastStep = %ld,\n 距离 = %f,\n 配速 = %@, \n 速度 = %@,\n 点数 = %ld,\n 错误点数 = %ld,\n", self.time, self.pointDuration, self.pointDistance, self.pointStep, self.lastStep, self.distance, self.pace, self.speedString,self.pointIndex, self.invalidPointIndex);
+    NSString *log = [NSString stringWithFormat:@"保存点位信息 -> 时间 = %ld,\n 点耗时 = %ld,\n 点距离 = %ld,\n 点步数 = %ld,\n lastStep = %ld,\n 距离 = %f,\n 配速 = %@, \n 速度 = %@,\n 点数 = %ld,\n 错误点数 = %ld,\n", self.time, self.pointDuration, self.pointDistance, self.pointStep, self.lastStep, self.distance, self.pace, self.speedString,self.pointIndex, self.invalidPointIndex];
+    Cute_Debug(log)
 }
 
 //运动距离
@@ -136,6 +139,7 @@ static RunManager *_lnRunManager = nil;
 //    self.infoModel.target = 0;
 //    [[LNDBManager shareInstance] insertInfoModel:self.infoModel];
 //    [[DBManager shareInstance] insertInfoModel:self.infoModel];
+    Cute_Debug(@"跑步初始化")
     self.infoModel.startTime = [LNRunModel dateToString];
     [[DBManager shareInstance] insertInfoModel:self.infoModel];
     self.runID = [[DBManager shareInstance] queryRunIDBy:self.infoModel.startTime];
@@ -153,7 +157,7 @@ static RunManager *_lnRunManager = nil;
 //    self.infoModel.points = self.pointIndex;
 //    self.infoModel.invalidPoints = self.invalidPointIndex;
 //    [[LNDBManager shareInstance] updateInfoModel:self.infoModel];
-    
+    Cute_Debug(@"更新跑步信息")
     self.infoModel.endTime = [LNRunModel dateToString];
     self.infoModel.duration = [self.infoModel getDuration];
     self.infoModel.distance = self.distance * 1000;
@@ -180,6 +184,7 @@ static RunManager *_lnRunManager = nil;
     model.steps = self.pointStep;
     [[DBManager shareInstance] insertDetailModel:model];
     
+    Cute_Debug(model.description)
     
 //    LNSportsDetailModel *model = [[LNSportsDetailModel alloc] init];
 //    model.runID = self.runID;
@@ -206,6 +211,7 @@ static RunManager *_lnRunManager = nil;
 //    [[LNDBManager shareInstance] updateInfoModel:self.infoModel];
 //    [[LNDBManager shareInstance] deleteInfoData:[LNDBManager SPORT_INFO_TABLE]  id:[NSString stringWithFormat:@"%ld", self.infoModel.id]];
     BLYLogInfo(@"------>1 删除数据");
+    Cute_Debug(@"直接取消跑步，删除跑步数据")
 }
 
 - (void)finishRunning {
@@ -216,6 +222,8 @@ static RunManager *_lnRunManager = nil;
     self.infoModel.steps = self.step;
     self.infoModel.all_points = self.pointIndex;
     [[DBManager shareInstance] updateInfoModel:self.infoModel];
+    Cute_Debug(@"完成跑步，保存信息")
+    Cute_Debug(self.infoModel.description)
 //    self.infoModel.endTime = (NSInteger)[[NSDate date] timeIntervalSince1970];
 //    self.infoModel.inputTime = 0;
 //    self.infoModel.duration = self.infoModel.endTime - self.infoModel.startTime;

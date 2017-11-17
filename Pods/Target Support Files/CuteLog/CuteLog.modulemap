@@ -1,0 +1,6 @@
+framework module CuteLog {
+  umbrella header "CuteLog-umbrella.h"
+
+  export *
+  module * { export * }
+}

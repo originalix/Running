@@ -18,5 +18,5 @@
 #import "LNDBManager.h"
 #import "LNSportTracking.h"
 #import "WHC_ModelSqlite.h"
-
+#import "LogObjcConst.h"
 #endif /* LNRunning_h */
