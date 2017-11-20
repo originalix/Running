@@ -10,6 +10,7 @@
 		176C5570EE62F4DFA57A05CE /* Pods_LNRunning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F612F74188E89712A0623000 /* Pods_LNRunning.framework */; };
 		560790211FBD2A1200216B81 /* LNRecoverTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560790201FBD2A1200216B81 /* LNRecoverTimer.swift */; };
 		560790241FBD2A7100216B81 /* RecoverTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 560790231FBD2A7100216B81 /* RecoverTimerViewController.m */; };
+		562AEF3F1FC28189000269E4 /* RecoverManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 562AEF3E1FC28189000269E4 /* RecoverManager.m */; };
 		5659BE451E514E6F00821A80 /* LNPolyLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5659BE401E514E6F00821A80 /* LNPolyLine.m */; };
 		5659BE461E514E6F00821A80 /* LNSportTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5659BE421E514E6F00821A80 /* LNSportTracking.m */; };
 		5659BE471E514E6F00821A80 /* LNSportTrackingLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5659BE441E514E6F00821A80 /* LNSportTrackingLine.m */; };
@@ -61,6 +62,8 @@
 		560790201FBD2A1200216B81 /* LNRecoverTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LNRecoverTimer.swift; sourceTree = "<group>"; };
 		560790221FBD2A7100216B81 /* RecoverTimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecoverTimerViewController.h; sourceTree = "<group>"; };
 		560790231FBD2A7100216B81 /* RecoverTimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecoverTimerViewController.m; sourceTree = "<group>"; };
+		562AEF3D1FC28189000269E4 /* RecoverManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecoverManager.h; sourceTree = "<group>"; };
+		562AEF3E1FC28189000269E4 /* RecoverManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecoverManager.m; sourceTree = "<group>"; };
 		5659BE3F1E514E6F00821A80 /* LNPolyLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNPolyLine.h; sourceTree = "<group>"; };
 		5659BE401E514E6F00821A80 /* LNPolyLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNPolyLine.m; sourceTree = "<group>"; };
 		5659BE411E514E6F00821A80 /* LNSportTracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNSportTracking.h; sourceTree = "<group>"; };
@@ -273,6 +276,8 @@
 				56D1B2A41FBD42250031D6F9 /* RunManager.m */,
 				56D1B2A61FBD422C0031D6F9 /* DBManager.h */,
 				56D1B2A71FBD422C0031D6F9 /* DBManager.m */,
+				562AEF3D1FC28189000269E4 /* RecoverManager.h */,
+				562AEF3E1FC28189000269E4 /* RecoverManager.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -541,6 +546,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				562AEF3F1FC28189000269E4 /* RecoverManager.m in Sources */,
 				56CFB8D31E4C4C01009E2FC4 /* LixMarcoSwift.swift in Sources */,
 				5659BE461E514E6F00821A80 /* LNSportTracking.m in Sources */,
 				56B5FC721FBEAF26001318C5 /* TinyObject.swift in Sources */,
