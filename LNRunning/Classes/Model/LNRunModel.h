@@ -18,7 +18,21 @@
 @property (nonatomic, assign) NSInteger steps;
 @property (nonatomic, assign) NSInteger all_points;
 
+/**
+ 获取当前时间的String类型
+ 时间格式： yyyy-MM-dd HH:mm:ss
+
+ @return String
+ */
 + (NSString *)dateToString;
+
+/**
+ 将传入的时间格式返回为时间戳格式
+ 时间格式： yyyy-MM-dd HH:mm:ss
+ @param dateString 时间字符串
+ @return 时间戳
+ */
+- (NSInteger)dateStringToTimestamp:(NSString *)dateString;
 
 - (NSInteger)getDuration;
 

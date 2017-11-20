@@ -13,4 +13,6 @@
  */
 @interface RecoverManager : NSObject
 
+- (void)checkNeedRecoverRun;
+
 @end

@@ -26,13 +26,13 @@
 }
 
 - (NSInteger)getDuration {
-    NSInteger endTime = [self p_DateStringToTimestamp:self.endTime];
-    NSInteger startTime = [self p_DateStringToTimestamp:self.startTime];
+    NSInteger endTime = [self dateStringToTimestamp:self.endTime];
+    NSInteger startTime = [self dateStringToTimestamp:self.startTime];
     NSInteger duration = endTime - startTime;
     return duration > 0 ? duration : 0;
 }
 
-- (NSInteger)p_DateStringToTimestamp:(NSString *)dateString {
+- (NSInteger)dateStringToTimestamp:(NSString *)dateString {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     formatter.dateFormat = @"yyyy-MM-dd HH:mm:ss";
     NSDate *date = [formatter dateFromString:dateString];
