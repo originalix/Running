@@ -10,6 +10,8 @@
 #import "WHC_ModelSqlite.h"
 #import "LNRunModel.h"
 
+#define halfHourTimestamp  1800
+
 @implementation RecoverManager
 
 - (void)checkNeedRecoverRun {
@@ -20,7 +22,16 @@
     
     LNRunModel *runModel = array.firstObject;
     NSLog(@"%@", runModel);
-    
+    NSInteger startTimestamp = [runModel dateStringToTimestamp:runModel.startTime];
+    NSInteger nowTimestamp = [[NSDate date] timeIntervalSince1970];
+    if ((nowTimestamp - startTimestamp) <= halfHourTimestamp) {
+        NSLog(@"您有需要恢复的跑步");
+        
+        // 给LNRunManager赋值 并恢复Controller
+        
+    } else {
+        NSLog(@"未结束的跑步已经超时");
+    }
 }
 
 @end
